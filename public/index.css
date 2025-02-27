@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: palevioletred;
+    position: relative;
+    height: 200px;
+    width: 100vw;
+}
+.baslik {
+    justify-content: center; 
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex; 
+    bottom: 80px;
+    gap: 2px; 
+    right: 0;
+    left: 0;
+}
+
+.baslik span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.harf1 { color: red; }
+.harf2 { color: orange; }
+.harf3 { color: yellow; }
+.harf4 { color: green; }
+.harf5 { color: blue; }
+.harf6 { color: white; } 
+.harf7 { color: indigo; }
+.harf8 { color: violet; }
+.harf9 { color: pink; }
+.harf10 { color: cyan; }

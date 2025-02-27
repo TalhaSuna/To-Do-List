@@ -1,0 +1,35 @@
+.cikti{
+    margin: 60px auto ;
+    height: 100px;
+    width: 40%;
+}
+.listem {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listem li {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+}
+
+.delete-btn {
+    background-color: red;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
