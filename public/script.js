@@ -4,7 +4,6 @@ let buton = document.getElementById("buton");
 let input = document.querySelector(".input input");
 let listem = document.querySelector(".listem");
 
-// Yeni bir Todo ekleme
 buton.addEventListener("click", async function () {
     let text = input.value.trim();
     if (text === "") return alert("Boş todo eklenemez!");
@@ -26,7 +25,6 @@ buton.addEventListener("click", async function () {
     }
 });
 
-// Todo listesini getir ve ekrana yazdır
 async function fetchTodos() {
     try {
         let response = await fetch("http://localhost:3000/get");
@@ -41,7 +39,6 @@ async function fetchTodos() {
     }
 }
 
-// Todo elemanını oluştur ve listeye ekle
 function createTodoElement(todo) {
     let li = document.createElement("li");
     li.textContent = todo.text;
@@ -59,7 +56,7 @@ function createTodoElement(todo) {
             });
 
             let result = await response.json();
-            if (result.success) li.remove(); // Başarıyla silindiyse listeden kaldır
+            if (result.success) li.remove();
         } catch (error) {
             console.error("Hata:", error);
         }
