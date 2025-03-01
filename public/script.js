@@ -86,12 +86,10 @@ function createTodoElement(todo) {
     listem.appendChild(li);
 }
 
-// Modal kapatma fonksiyonları
 closeBtn.addEventListener("click", function () {
     modal.classList.remove("show");
 });
 
-// Güncellenmiş veriyi kaydetme
 saveBtn.addEventListener("click", async function () {
     let updatedText = modalInput.value.trim();
     if (updatedText === "") return alert("Todo boş olamaz!");
@@ -113,7 +111,6 @@ saveBtn.addEventListener("click", async function () {
     }
 });
 
-// Modal dışına tıklayınca kapatma
 window.addEventListener("click", function (event) {
     if (event.target === modal) {
         modal.classList.remove("show");
