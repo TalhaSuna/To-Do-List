@@ -1,6 +1,6 @@
 .cikti{
     margin: 60px auto ;
-    height: 100px;
+    height: auto;
     width: 40%;
 }
 .listem {
@@ -18,6 +18,23 @@
     margin: 5px 0;
     padding: 10px;
     display: flex;
+}
+.butonlar{
+    display: flex;
+    gap: 5px;
+}
+.guncelle-btn{
+    background-color: blue;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+.guncelle-btn:hover {
+    background-color: darkblue;
 }
 
 .delete-btn {

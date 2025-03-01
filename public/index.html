@@ -13,6 +13,9 @@
     <link 
     rel="stylesheet" 
     href="cikti.css">
+    <link 
+    rel="stylesheet" 
+    href="modal.css">
 </head>
 <body>
     <div class="header">
@@ -39,6 +42,15 @@
     </div>
     <div class="cikti">
         <ul class="listem"></ul>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Güncelle</h2>
+            <input type="text" id="modal-input" placeholder="Yeni todo girin...">
+            <button id="save-btn">Kaydet</button>
+        </div>
     </div>
 
     <script 

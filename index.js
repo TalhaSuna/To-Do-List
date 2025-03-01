@@ -40,4 +40,20 @@ app.post("/delete", async (req, res) => {
   }
 });
 
+// 📌 **Yeni eklenen güncelleme endpoint'i**
+app.post("/update", async (req, res) => {
+  try {
+    const { id, text } = req.body;
+    if (!id || !text) {
+      return res.status(400).json({ success: false, message: "ID ve yeni metin gereklidir." });
+    }
+
+    await r.table("team").get(id).update({ text }).run();
+    res.json({ success: true, message: "Veri güncellendi!" });
+  } catch (error) {
+    console.error("Güncelleme hatası:", error);
+    res.status(500).json({ success: false, message: "Güncelleme işlemi başarısız." });
+  }
+});
+
 app.listen(3000, () => console.log("Server 3000 portunda çalışıyor!"));
